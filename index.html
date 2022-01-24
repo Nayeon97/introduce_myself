@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="folder.png" />
+    <script src="https://kit.fontawesome.com/de2751a4a2.js" crossorigin="anonymous"></script>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&family=Noto+Sans+KR:wght@100;300;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+    <title>N A Y E O N</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item" id="home" onclick="whiteColor()"><a href="index.html">Home</a></li>
+            <li class="navbar__menu__item" id="whoami" onclick="colorChange1()">Who Am I </li>
+            <li class="navbar__menu__item" id="withelice" onclick="colorChange2()">With Elice</li>
+        </ul>
+        <a href="#" class="navbar__toggleBtn">
+           <span>&#128193;</span>
+        </a>
+        <input type="button" value="dark" onclick="
+        dark_light(this);
+      ">
+    </nav>
+
+    <!-- Home -->
+    <section class="home">
+        <img src="nayeon.png">
+    </section>
+
+    <section class="introduce" id="introduce">
+        <div class="introduce__text">
+            <h1>&#128522; Who Am I</h1>
+            <ul>
+                <li class="edit"><a onclick="open_interest()">
+                    <span id="icon-text-a">&#128196;</span> 관심 분야</a></li>
+                <div class="detail_text" id="introduce__text_interest" style="display: none;">
+                    <p> 
+                        저는 웹 앱 개발 분야에 관심이 있습니다.
+                    </p>
+                </div>
+
+                <li class="edit"><a onclick="open_goal()">
+                    <span id="icon-text-b">&#128196;</span> 앞으로의 목표</a></li>
+                <div class="detail_text" id="introduce__text_goal" style="display: none;">
+                    <p>
+                        먼저 엘리스AI트랙에 성실히 임해서, 완주하는 것이 앞으로 6개월동안의 가장 중요한 목표입니다!<br> 
+                        그리고 HTML, CSS 가 아직 익숙하지 않기 때문에, 많이 만들어보고 익숙해질 수 있도록 하겠습니다!<br>
+                        JavaScript 는 스터디와 개인적인 공부를 통해서 기초부터 알아갈 수 있도록 하겠습니다!<br>
+                        JavaScript가 익숙해진다면 React 공부도 개인적으로 하는것이 목표입니다! <br>
+                        아직 부족한 점이 많지만 최종적으로 웹 앱 프론트엔드 개발자가 되는것이 최종적인 목표입니다.<br>
+                    </p>
+                </div>
+                
+                <li class="edit"><a onclick="open_hobby()">
+                    <span id="icon-text-c">&#128196;</span> 취미</a></li>
+                <div class="detail_text" id="introduce__text_hobby" style="display: none;">
+                    <p>
+                       음악 듣기&#127911; 넷플릭스 보기&#127909;
+                    </p>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="elice" id="elice">
+        <div class="elice__text">
+            <h1>&#128048; With Elice</h1>
+            <ul>
+                <li class="edit"><a onclick="open_elice()">
+                    <span id="icon-text-d">&#128196;</span> AI트랙에서 기대되는 점</a></li>
+                <div class="detail_text" id="elice__text_AI" style="display: none;">
+                    <p>
+                        엘리스 AI트랙을 통해, 매일 새로운 것을 배우고 성장해나가는 모습이 제일 기대가 됩니다.
+                    </p>
+                </div>               
+                <li class="edit"><a onclick="open_racer()">
+                    <span id="icon-text-e">&#128196;</span> 동료 레이서들에게 하고 싶은 말</a></li>
+                <div class="detail_text" id="elice__text_racer" style="display: none;">
+                    <p>&#128293; 다 같이 서로 도우면서 열심히 해서 모두 완주했으면 좋겠어요! &#128170;&#127941;</p>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

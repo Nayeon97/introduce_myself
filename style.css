@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  border-radius: 30px;
+  padding: 30px 20px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
+
+#htmlcssjs {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+.dark {
+  font-size: large;
+}
+
+.navbar {
+  /* background-color: yellow; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu__item {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 50px 20px 50px;
+}
+
+.navbar__menu__item:hover {
+  padding: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 10px silver;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+  transition-delay: 0.2ms;
+  font-size: 19px;
+}
+
+.home {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.detail_text {
+  padding-left: 30px;
+}
+
+.introduce {
+  background-color: white;
+  height: 200%;
+  width: 70%;
+  display: flex;
+  margin: 30px auto;
+}
+
+.introduce__text {
+  padding: 0;
+  margin-left: 50px;
+}
+
+.edit {
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.elice {
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  margin: 30px auto;
+}
+
+.elice__text {
+  margin-left: 50px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute; /*flexbox 흐름에서 나와서 독단적으로 할 수 있는 것*/
+  right: 32px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navdar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /*너비를 100%로 지정해야 center*/
+  }
+
+  .navdar__menu li {
+    width: 150%; /*너비가 넓어지면 text는 자동으로 왼쪽으로 감*/
+    text-align: center;
+    display: block;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .navbar__toggleBtn span {
+    font-size: larger;
+  }
+
+  .navbar__menu.active {
+    display: flex;
+  }
+
+  .introduce__text,
+  .elice__text,
+  .edit,
+  h1,
+  .detail_text {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .edit {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  input {
+    display: none;
+  }
+}
